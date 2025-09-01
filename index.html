@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="initGallery()">
+  <header>
+    <h1>Accessible Photo Gallery</h1>
+    <p>Hover over, focus, or navigate with your keyboard to explore the gallery below.</p>
+  </header>
+
+  <!-- Main display area -->
+  <div id="image">
+    <span id="image-text">Hover over an image below to display here.</span>
+  </div>
+
+  <!-- Thumbnails -->
+  <div class="gallery">
+    <img src="images/blackrose.jpeg" alt="Black Rose – symbol of mystery"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()">
+
+    <img src="images/hibiscus.jpeg" alt="Hibiscus – tropical beauty"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()">
+
+    <img src="images/tulip.jpg" alt="Tulip – cheerful spring flower"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()">
+
+    <img src="images/bluerose.jpeg" alt="Blue Rose – rare and enchanting"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()">
+
+    <img src="images/marigold.jpg" alt="Marigold – vibrant and festive"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()">
+
+    <img src="images/tulip1.png" alt="Bunch of Tulip – symbol of positivity"
+         onmouseover="upDate(this)" onmouseout="undo()"
+         onfocus="upDate(this)" onblur="undo()">
+  </div>
+
+  <footer>
+    <h2>About This Gallery</h2>
+    <p>This gallery was designed with accessibility in mind. All images include descriptive alternative text, keyboard navigation, and clear contrast for readability.</p>
+    <p>&copy; 2025 Flower Showcase by AA</p>
+  </footer>
+</body>
+</html>
